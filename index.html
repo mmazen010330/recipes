@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mazen">
+   <title>What's For Dinner</title>
+   <link rel="shortcut icon" href="images/Images/favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+<nav class="custom-navbar">
+    <div class="container px-4 d-flex align-items-center justify-content-between h-100">
+        
+        <div class="nav-left d-flex align-items-center">
+            <div class="logo-icon d-flex align-items-center justify-content-center me-3">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="brand-text">
+                <h1 class="nav-title m-0">What's For Dinner</h1>
+                <p class="nav-subtitle m-0">Your daily meal inspiration</p>
+            </div>
+        </div>
+
+        <div class="nav-right d-flex align-items-center gap-4">
+            <a href="#" class="nav-link-icon"><i class="fa-solid fa-bookmark"></i></a>
+            <a href="#" class="nav-link-icon"><i class="fa-solid fa-clock-rotate-left"></i></a>
+            <a href="#" class="nav-link-icon"><i class="fa-solid fa-gear"></i></a>
+            
+            <div class="profile-avatar">
+                <img src="images/Images/avatar-2.jpg" alt="Profile">
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="hero-section " style="padding-top: 20px; height:850px ;">
+    <div class="container  ">
+    <div class="row g-0" id="cort">
+        
+        <div class="col-lg-5 position-relative">
+            <div class="position-relative img-wrapper sty-1 ">
+                <img src="images/Images/photo-1574071318508-1cdbab80d002.avif" alt="Margherita Pizza" class="img-fluid sty-1   w-100 h-100 object-fit-cover">
+                
+                <div class="rating-badge position-absolute bg-white rounded-pill px-3 py-1 shadow-sm">
+                    <i class="fa fa-star text-warning me-1"></i>
+                    <strong class="text-dark">4.9</strong>
+                    <span class="text-muted small ms-1">(512 reviews)</span>
+                </div>
+
+                <div class="stats-card position-absolute bg-white p-3 rounded-4 shadow d-flex justify-content-around align-items-center">
+                    <div class="text-center px-2">
+                        <i style="color: #D97706;" class="fa fa-clock   fs-4 d-block mb-1"></i>
+                        <span class="text-muted small d-block">Prep Time</span>
+                        <strong class="text-dark">90 min</strong>
+                    </div>
+                    <div class="vr mx-2"></div>
+                    <div class="text-center px-2">
+                        <i class="bi fa fa-fire-burner text-danger fs-4 d-block mb-1"></i>
+                        <span class="text-muted small d-block">Cook Time</span>
+                        <strong class="text-dark">12 min</strong>
+                    </div>
+                    <div class="vr mx-2"></div>
+                    <div class="text-center px-2">
+                        <i class="fa fa-users text-primary fs-4 d-block mb-1"></i>
+                        <span class="text-muted small d-block">Servings</span>
+                        <strong class="text-dark">2 people</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 ps-lg-5 bg-white sty-2 " >
+           <div class="sty-3">
+           <div class="sty-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex gap-2">
+                    <span class="badge badge-custom bg-success-subtle text-success">Intermediate</span>
+                    <span class="badge badge-custom bg-primary-subtle text-primary">Italian</span>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-action rounded-3  text-danger"><i class="fa fa-bookmark"></i></button>
+                    <button class="btn btn-action rounded-3  text-danger"><i class="fa fa-share-nodes"></i></button>
+                </div>
+            </div>
+            
+            <h1 class="fw-bold mb-1 text-dark text-gradient">Margherita Pizza</h1>
+            <p class="text-muted mb-4">Classic Italian pizza with fresh mozzarella and basil</p>
+
+            <div class="alert alert-custom border-start border-danger border-4 d-flex align-items-start p-3 mb-4" role="alert">
+                <i class="fa fa-triangle-exclamation text-danger fs-5 me-3 mt-1"></i>
+                <div>
+                    <h6 class="fw-bold text-danger mb-1">Extended Preparation Time</h6>
+                    <p class="mb-0 text-secondary small">This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs custom-tabs border-bottom mb-4" id="recipeTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients" type="button" role="tab">
+                        <i class="bi bi-list-task me-2"></i>Ingredients
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="instructions-tab" data-bs-toggle="tab" data-bs-target="#instructions" type="button" role="tab">
+                        <i class="bi bi-book me-2"></i>Instructions
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="nutrition-tab" data-bs-toggle="tab" data-bs-target="#nutrition" type="button" role="tab">
+                        <i class="bi bi-pie-chart me-2"></i>Nutrition
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" id="chefs-tips-tab" data-bs-toggle="tab" data-bs-target="#chefs-tips" type="button" role="tab">
+                        <i class="bi bi-lightbulb me-2"></i>Chef's Tips
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="recipeTabContent">
+                <div class="tab-pane fade show active" id="ingredients" role="tabpanel">
+                    <div class="ingredients-container p-4 rounded-4 sty-6">
+                        <div class="row g-3 ">
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">1</span><span class="text-secondary fw-medium">300g pizza dough</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">2</span><span class="text-secondary fw-medium">200g crushed tomatoes</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">3</span><span class="text-secondary fw-medium">250g fresh mozzarella</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">4</span><span class="text-secondary fw-medium">Fresh basil leaves</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">5</span><span class="text-secondary fw-medium">2 tablespoons olive oil</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">6</span><span class="text-secondary fw-medium">2 cloves garlic, minced</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">7</span><span class="text-secondary fw-medium">Salt and pepper to taste</span></div></div>
+                            <div class="col-10"><div class="d-flex align-items-center"><span class="step-num bg-orange text-white me-3">8</span><span class="text-secondary fw-medium">Parmesan cheese for topping</span></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane sty-8  fade" id="instructions" role="tabpanel">
+                   <div class=" ">
+    <div class="instructions-wrapper d-flex flex-column gap-4 p-4">
+          <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">1</span>
+            <p class="instruction-text mb-0 text-secondary">Let pizza dough come to room temperature and rest for 1 hour.</p>
+        </div>
+        <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">2</span>
+            <p class="instruction-text mb-0 text-secondary">Preheat oven to maximum temperature (usually 180°C/480°F).</p>
+        </div>
+
+        <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">3</span>
+            <p class="instruction-text mb-0 text-secondary">Mix crushed tomatoes with olive oil, garlic, salt, and pepper for the sauce.</p>
+        </div>
+
+        <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">4</span>
+            <p class="instruction-text mb-0 text-secondary">Roll out dough on a floured surface to desired thickness.</p>
+        </div>
+
+        <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">5</span>
+            <p class="instruction-text mb-0 text-secondary">Spread tomato sauce, add torn mozzarella pieces, and drizzle with olive oil.</p>
+        </div>
+
+        <div class="instruction-item d-flex align-items-center">
+            <span class="step-badge bg-orange text-white me-4">6</span>
+            <p class="instruction-text mb-0 text-secondary">Bake for 10-12 minutes until crust is golden. Top with fresh basil and parmesan.</p>
+        </div>
+
+    </div>
+</div>
+                </div>
+                <div class="tab-pane fade" id="nutrition" role="tabpanel">
+                   <div class="container my-5">
+    <div class="row g-4 max-width-container">
+        
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-orange-subtle text-orange rounded-3 me-3">
+                        <i class="fa-solid fa-fire fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Calories</span>
+                </div>
+                <strong class="nutrition-value fs-4">580 kcal</strong>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-blue-subtle text-blue rounded-3 me-3">
+                        <i class="fa-solid fa-dumbbell fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Protein</span>
+                </div>
+                <strong class="nutrition-value fs-4">24g</strong>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-yellow-subtle text-yellow rounded-3 me-3">
+                        <i class="fa-solid fa-wheat-awn fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Carbohydrates</span>
+                </div>
+                <strong class="nutrition-value fs-4">68g</strong>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-red-subtle text-red rounded-3 me-3">
+                        <i class="fa-solid fa-droplet fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Fat</span>
+                </div>
+                <strong class="nutrition-value fs-4">22g</strong>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-green-subtle text-green rounded-3 me-3">
+                        <i class="fa-solid fa-seedling fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Fiber</span>
+                </div>
+                <strong class="nutrition-value fs-4">4g</strong>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="nutrition-card d-flex align-items-center justify-content-between p-3 rounded-4">
+                <div class="d-flex align-items-center">
+                    <div class="icon-box bg-pink-subtle text-pink rounded-3 me-3">
+                        <i class="fa-solid fa-cube fs-5"></i>
+                    </div>
+                    <span class="nutrition-title fw-semibold">Sodium</span>
+                </div>
+                <strong class="nutrition-value fs-4">920mg</strong>
+            </div>
+        </div>
+
+    </div>
+</div>
+                </div>
+                <div class="tab-pane fade" id="chefs-tips" role="tabpanel">
+                   <div class="container my-5">
+    <div class="tips-wrapper d-flex flex-column gap-3 p-3">
+        
+        <div class="tip-card d-flex align-items-center p-3 rounded-4">
+            <div class="check-icon-box bg-orange text-white rounded-circle me-3">
+                <i class="fa-solid fa-check fs-6"></i>
+            </div>
+            <p class="tip-text mb-0">Use a pizza stone for crispier crust</p>
+        </div>
+
+        <div class="tip-card d-flex align-items-center p-3 rounded-4">
+            <div class="check-icon-box bg-orange text-white rounded-circle me-3">
+                <i class="fa-solid fa-check fs-6"></i>
+            </div>
+            <p class="tip-text mb-0">Don't overload with toppings - less is more</p>
+        </div>
+
+        <div class="tip-card d-flex align-items-center p-3 rounded-4">
+            <div class="check-icon-box bg-orange text-white rounded-circle me-3">
+                <i class="fa-solid fa-check fs-6"></i>
+            </div>
+            <p class="tip-text mb-0">Add basil after baking to keep it fresh</p>
+        </div>
+
+        <div class="tip-card d-flex align-items-center p-3 rounded-4">
+            <div class="check-icon-box bg-orange text-white rounded-circle me-3">
+                <i class="fa-solid fa-check fs-6"></i>
+            </div>
+            <p class="tip-text mb-0">Let dough rest properly for best texture</p>
+        </div>
+
+    </div>
+</div>
+                </div>
+
+
+            </div>
+
+            <div class="sty-5 ">
+                <button onclick="pre()"  class=" sty-7  text-light  btn-lg w-50"> Try Another recipe</button>
+            </div>
+           </div>
+           </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="text-center text-muted py-3 small">Created by Mazen</footer>
+
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

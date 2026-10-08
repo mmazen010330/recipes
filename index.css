@@ -1,0 +1,429 @@
+
+/*start general format */
+
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+/* end general format */
+
+/* start nav */
+
+.custom-navbar {
+    background-color: #ffffff;
+    height: 90px;
+    position: relative;
+   border-bottom: 3px solid rgba(0, 0, 0, 0.056);
+    
+}
+
+.logo-icon {
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(135deg, #ff7300, #ff3b30);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 22px;
+    box-shadow: 0 4px 10px rgba(255, 60, 0, 0.2);
+}
+
+.nav-title {
+    color: #002244;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nav-subtitle {
+    color: #8a94a6;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 2px !important;
+}
+
+.nav-link-icon {
+    color: #4a5568;
+    font-size: 20px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.nav-link-icon:hover {
+    color: #ff5100;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #ff6a00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.hero-section{
+    background-color: #FFFBEA;
+}
+
+/* end nav */
+
+
+
+
+/* start hero section */
+
+.sty-2{
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+     padding: 30px 0px;
+     
+}
+
+
+.sty-1{
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+   
+}
+.sty-3{
+    width: 99% !important;
+    margin: auto !important;
+    overflow-y: scroll;
+    padding-right: 20px;
+    height: 650px;
+}
+.btn{
+    width: 50px !important;
+    height: 50px !important;
+    background-color: #f974161b !important;
+    transition-duration: 0.3s !important;
+  
+}
+.sty-6{
+    margin-bottom: 30px !important;
+    
+}
+
+.sty-7{
+    border: none !important;
+    outline: none !important;
+    height: 50px;
+    border-radius: 15px;
+    background-color:  #ff5100 !important;
+}
+
+.sty-7:hover{
+    background-color: #ff5100 !important;
+    
+}
+.sty-5{
+  margin-top: 20px !important;
+    border-top:1px solid rgba(0, 0, 0, 0.137) !important;
+    padding-top: 30px !important;
+}
+.btn:hover{
+     background-color: #f9741639 !important;
+}
+.main-card {
+    border: none;
+    max-width: 1100px;
+}
+
+.img-wrapper {
+    height: 100vh !important;
+}
+
+.rating-badge {
+    top: 20px;
+    left: 20px;
+    font-size: 0.9rem;
+}
+
+.stats-card {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.badge-custom {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.btn-action {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.alert-custom {
+    background-color: #fff1f2;
+    border-color: #f43f5e !important;
+    border-radius: 8px;
+}
+
+.custom-tabs .nav-link {
+    color: #64748b;
+    font-weight: 600;
+    border: none;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+    font-size: 0.95rem;
+}
+
+.custom-tabs .nav-link:hover {
+    color: #f97316;
+}
+
+.custom-tabs .nav-link.active {
+    color: #f97316 !important;
+    background-color: transparent !important;
+    border-bottom-color: #f97316 !important;
+}
+
+.ingredients-container {
+    background-color: #fffbf4;
+}
+
+.step-num {
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.bg-orange {
+    background-color: #f97316;
+}
+
+
+
+.sty-8{
+   overflow-y: scroll !important;
+   height: 400px;
+}
+
+
+.instructions-wrapper {
+    max-width: 800px;
+}
+
+.instruction-item {
+    min-height: 60px;
+}
+
+.step-badge {
+    width: 54px;
+    height: 54px;
+    font-size: 1.35rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    flex-shrink: 0;
+}
+
+.bg-orange {
+    background-color: #ff6f00;
+}
+
+.instruction-text {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4a5568 !important;
+}
+
+
+
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+.max-width-container {
+    max-width: 900px;
+}
+
+.nutrition-card {
+    background-color: #f8fafc;
+    min-height: 80px;
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nutrition-title {
+    font-size: 1.1rem;
+    color: #475569;
+}
+
+.nutrition-value {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.bg-orange-subtle { background-color: #fff3e0; }
+.text-orange { color: #ff6d00; }
+
+.bg-blue-subtle { background-color: #e3f2fd; }
+.text-blue { color: #2979ff; }
+
+.bg-yellow-subtle { background-color: #fffde7; }
+.text-yellow { color: #f57f17; }
+
+.bg-red-subtle { background-color: #ffebee; }
+.text-red { color: #d50000; }
+
+.bg-green-subtle { background-color: #e8f5e9; }
+.text-green { color: #00c853; }
+
+.bg-pink-subtle { background-color: #fce4ec; }
+.text-pink { color: #d81b60; }
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: #ffffff;
+    color: #334155;
+}
+
+.tips-wrapper {
+    max-width: 850px;
+}
+
+.tip-card {
+    background-color: #fffbf4;
+    border-left: 5px solid #f97316;
+    min-height: 70px;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+
+.check-icon-box {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bg-orange {
+    background-color: #d97706;
+}
+
+.tip-text {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+
+
+
+
+
+/* end hero section */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .step-badge {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+        border-radius: 14px;
+        margin-right: 15px !important;
+    }
+    .instruction-text {
+        font-size: 1rem;
+    }
+
+     .nutrition-title {
+        font-size: 1rem;
+    }
+    .nutrition-value {
+        font-size: 1.2rem !important;
+    }
+    .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+     .tip-text {
+        font-size: 1rem;
+    }
+    .check-icon-box {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+    .img-wrapper {
+        height: 360px;
+    }
+    .stats-card {
+        position: relative !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin-top: 15px;
+    }
+}
